@@ -5,7 +5,7 @@ var typed = new Typed(".text" ,{
     backDelay: 1000,
     loop:true
 
-} )
+} );
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -42,3 +42,12 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
+
+    
+
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x'); 
+    navbar.classList.toggle('active'); 
+};
+    

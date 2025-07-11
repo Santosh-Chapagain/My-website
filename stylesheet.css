@@ -36,7 +36,11 @@ body {
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-
+.text {
+    color: #0ef;
+    /* or any visible color */
+    font-weight: bold;
+}
 .navbar a {
     display: inline-block;
     font-size: 20px;
