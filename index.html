@@ -12,6 +12,7 @@
 <body>
     <header class="header">
         <a href = "#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="index.html" style="--i:1"class="active">Home</a>
             <a href="#about" style="--i:2"class="active">About</a>
@@ -267,7 +268,15 @@
 
 
 
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
 
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x'); 
+            navbar.classList.toggle('active'); 
+        };
+    </script>
 
     <script src="main.js"></script>
 </body>

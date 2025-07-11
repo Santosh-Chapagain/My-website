@@ -10,12 +10,12 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x'); // Toggles the icon to an 'X'
-    navbar.classList.toggle('active'); // Toggles the navigation menu
+    menuIcon.classList.toggle('bx-x'); 
+    navbar.classList.toggle('active'); 
 };
 
 
-// This is for the active link highlighting on scroll
+
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -34,11 +34,11 @@ window.onscroll = () => {
         };
     });
 
-    // Sticky navbar
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    // Remove toggle icon and navbar when click navbar link (for mobile)
+   
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+
